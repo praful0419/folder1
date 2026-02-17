@@ -51,7 +51,7 @@ pipeline {
 
         stage('Deploy to App EC2') {
             steps {
-                sshagent(credentials: ['app-ec2-ssh']) {
+                sshagent(credentials: ['ec2-c3-key']) {
                     sh """
                     ssh -o StrictHostKeyChecking=no ubuntu@${APP_EC2_HOST} '
                         aws ecr get-login-password --region ${AWS_REGION} | \
