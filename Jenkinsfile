@@ -6,7 +6,7 @@ pipeline {
         ECR_REGISTRY  = "209815669155.dkr.ecr.ap-south-1.amazonaws.com"
         ECR_REPO      = "pipeline-repo"
         IMAGE_TAG     = "${BUILD_NUMBER}"
-        APP_EC2_HOST  = "13.203.209.197"
+        APP_EC2_HOST  = "65.1.110.61"
         CONTAINER_NAME = "pipeline-repo"
         APP_PORT      = "80"
     }
